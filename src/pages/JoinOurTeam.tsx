@@ -13,8 +13,63 @@ import growth from "../assets/icons/home_work.svg";
 import { sampleJobs } from "../data";
 import { JoinOurTeamSectionHeader } from "../atoms/JoinOurTeamSectionHeader";
 import { JobCard } from "../components/cards/JobCard";
+import { ScrollingGallery } from "../components/ScrollingGallery";
+import galleryOne from "../assets/images/galleryOne.svg";
+import galleryTwo from "../assets/images/galleryTwo.svg";
+import galleryThree from "../assets/images/galleryThree.svg";
+import galleryFour from "../assets/images/galleryFour.svg";
+import galleryFive from "../assets/images/galleryFive.svg";
+import careerOne from "../assets/images/careerOne.svg";
+import careerTwo from "../assets/images/careerTwo.jpg";
+import careerThree from "../assets/images/careerThree.png";
+import careerFour from "../assets/images/careerFour.svg";
+import careerFive from "../assets/images/careerFive.svg";
+import careerSix from "../assets/images/careerSix.svg";
+import loveWorkOne from "../assets/images/loveWorkOne.png";
+import loveWorkTwo from "../assets/images/loveWorkTwo.png";
+import loveWorkThree from "../assets/images/loveWorkThree.png";
+import loveWorkFour from "../assets/images/loveWorkFour.png";
+import loveWorkFive from "../assets/images/loveWorkFive.png";
 
 const JoinOurTeam = () => {
+  const images = [
+    galleryOne,
+    galleryTwo,
+    galleryThree,
+    galleryFour,
+    galleryFive,
+  ];
+
+  const careerImages = [
+    careerOne,
+    careerTwo,
+    careerThree,
+    careerFour,
+    careerFive,
+    careerSix,
+  ];
+
+  const loveToWorkImages = [
+    loveWorkOne,
+    loveWorkTwo,
+    loveWorkThree,
+    loveWorkFour,
+    loveWorkFive,
+  ];
+
+  const workAtBiyar = [
+    galleryOne,
+    galleryTwo,
+    galleryThree,
+    galleryFour,
+    galleryFive,
+    galleryOne,
+    galleryTwo,
+    galleryThree,
+    galleryFour,
+    galleryFive,
+  ];
+
   return (
     <Layout>
       {/* First Section */}
@@ -45,17 +100,22 @@ const JoinOurTeam = () => {
               View Open Roles &rarr;
             </p>
           </section>
+
+          <ScrollingGallery images={careerImages} />
         </div>
       </section>
 
       {/* Second Section */}
       <section className="flex mt-36 bg-white">
-        <div className="w-1/2 flex flex-col items-center">
-          <RoundedButton text="Our Work Culture" />
-          <JoinOurTeamSectionHeader
-            text=" Driven by Purpose, Powered by Passion"
-            className="w-[432px]"
-          />
+        <div className="w-1/2 flex flex-col mr-24">
+          <div className="ml-24">
+            <RoundedButton text="Our Work Culture" className="w-fit" />
+            <JoinOurTeamSectionHeader
+              text=" Driven by Purpose, Powered by Passion"
+              className="w-[432px]"
+            />
+          </div>
+          <ScrollingGallery images={images} />
         </div>
         <div className="w-1/2 mt-16">
           <JoinOurTeamHeader text="Obsess Over Solutions" />
@@ -106,16 +166,19 @@ const JoinOurTeam = () => {
 
       {/* Third Section */}
       <div className="flex pt-36">
-        <div className="w-1/2 flex flex-col items-center">
-          <RoundedButton text="Perks and Benefits" />
+        <div className="w-1/2 flex flex-col mr-24">
+          <div className="ml-24">
+            <RoundedButton text="Perks and Benefits" className="w-fit" />
 
-          <JoinOurTeamSectionHeader
-            text="Why you’ll love working here"
-            className="w-[432px]"
-          />
+            <JoinOurTeamSectionHeader
+              text="Why you’ll love working here"
+              className="w-[432px]"
+            />
+            <ScrollingGallery images={loveToWorkImages} />
+          </div>
         </div>
 
-        <div className="w-1/2 flex flex-wrap items-center gap-x-8">
+        <div className="w-1/2 flex flex-wrap">
           <div className="">
             <JoinOurTeamHeader text="Work From Anywhere" img={workFromHome} />
             <JoinOurTeamSubText
@@ -169,13 +232,16 @@ We trust you to make decisions."
 
       {/* Fourth Section */}
       <section className="mt-36 mb-24">
-        <div className="w-1/2 flex flex-col items-center">
-          <RoundedButton text="LIFE AT BIYAR" />
-          <JoinOurTeamSectionHeader
-            text="  What it’s like working at Biyar"
-            className="w-[432px]"
-          />
+        <div className="w-1/2 flex flex-col mb-12">
+          <div className="ml-24">
+            <RoundedButton text="LIFE AT BIYAR" className="w-fit" />
+            <JoinOurTeamSectionHeader
+              text="  What it’s like working at Biyar"
+              className="w-[432px]"
+            />
+          </div>
         </div>
+        <ScrollingGallery images={workAtBiyar} />
       </section>
 
       {/* Fifth Section */}

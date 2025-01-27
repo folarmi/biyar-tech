@@ -4,7 +4,8 @@ import { Footer } from "./Footer";
 import { sidebarMenuItems } from "../data";
 import close from "../assets/icons/x.svg";
 import background from "../assets/images/background.svg";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import { scrollToTop } from "../utils";
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +14,9 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   const toggleSidebar = () => {
     setIsExpanded(!isExpanded);
@@ -36,7 +40,7 @@ const Layout = ({ children }: LayoutProps) => {
           <img src={close} alt="close" />
         </button>
 
-        <div className="flex items-center">
+        <div className="flex">
           <div className="w-[25%]">
             <img src={background} alt="background" />
           </div>
@@ -48,12 +52,19 @@ const Layout = ({ children }: LayoutProps) => {
                   onClick={() => {
                     navigate(path);
                     toggleSidebar();
+                    scrollToTop();
                   }}
                   key={id}
                   className="flex items-center mb-[72px] text-black cursor-pointer"
                 >
                   <p className="font-normal text-base leading-5 pr-2">{id}</p>
-                  <p className="font-medium text-[25.89px] leading-6">{name}</p>
+                  <p
+                    className={`font-medium text-[25.89px] leading-6 ${
+                      isActive(path) ? "text-biyar_purple" : ""
+                    }`}
+                  >
+                    {name}
+                  </p>
                 </div>
               );
             })}
