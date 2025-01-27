@@ -1,11 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import logo from "../assets/images/logo.svg";
 import menu from "../assets/icons/menu.svg";
+import { Link } from "react-router";
 
 const Header = ({ toggleSidebar }: any) => {
   return (
     <nav className="sticky top-0 z-50 flex pt-10 justify-between items-center bg-gray_200 px-12">
-      <img src={logo} alt="biyar tech" />
+      <Link to="/">
+        <img src={logo} alt="biyar tech" />
+      </Link>
 
       <section className="flex items-center">
         <button className="bg-primary rounded-lg px-6 py-3 font-medium text-base text-white mr-4">
