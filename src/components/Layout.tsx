@@ -13,7 +13,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const navigate = useNavigate();
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -45,7 +45,7 @@ const Layout = ({ children }: LayoutProps) => {
             <img src={background} alt="background" />
           </div>
 
-          <div className="w-[75%] ml-28">
+          <div className="w-[75%] ml-8 lg:ml-28 mt-16">
             {sidebarMenuItems.map(({ id, name, path }) => {
               return (
                 <div
@@ -59,7 +59,7 @@ const Layout = ({ children }: LayoutProps) => {
                 >
                   <p className="font-normal text-base leading-5 pr-2">{id}</p>
                   <p
-                    className={`font-medium text-[25.89px] leading-6 ${
+                    className={`font-medium text-lg lg:text-[25.89px] leading-6 ${
                       isActive(path) ? "text-biyar_purple" : ""
                     }`}
                   >
