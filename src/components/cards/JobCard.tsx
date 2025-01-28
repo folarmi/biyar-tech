@@ -11,15 +11,17 @@ const JobCard = ({ title, dept, location, href }: Prop) => {
   return (
     <Link
       to={href}
-      className="flex items-center justify-between bg-white p-5 mb-5 cursor-pointer"
+      className="flex flex-col lg:flex-row lg:items-center justify-between bg-white p-5 mb-5 cursor-pointer"
     >
-      <div className="flex items-center">
+      <div className="flex flex-col lg:flex-row lg:items-center">
         <p className="manrope font-semibold text-base">{title}</p>
-        <Rounded />
+        <div className="hidden lg:block">
+          <Rounded />
+        </div>
         <p className="manrope font-medium text-base text-gray_700">{dept}</p>
       </div>
 
-      <div className="flex items-center">
+      <div className="flex items-center justify-between">
         <p className="manrope text-base font-semibold text-gray_700 pr-2">
           {location}
         </p>

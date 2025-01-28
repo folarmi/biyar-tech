@@ -74,19 +74,19 @@ const JoinOurTeam = () => {
     <Layout>
       {/* First Section */}
       <section className="flex flex-col items-center justify-center bg-gray_200">
-        <RoundedButton text="Careers" className="mt-14 mb-5" />
+        <RoundedButton text="Careers" className="mt-8 lg:mt-14 mb-5" />
 
         <BoldText
           text="Help businesses create value from their ideas"
-          className="w-[710px] text-center"
+          className="w-[350px] lg:w-[710px] lg:text-center"
         />
         <SubText
           text="We are a Software development agency based in texas. We turn your ideas into value, we believe ideas shape the future"
-          className="w-[547px] text-center pb-12"
+          className="w-[300px] lg:w-[547px] lg:text-center pb-12"
         />
 
-        <div className="mb-[169px] bg-gray_1000 w-[930px] rounded-2xl">
-          <section className="flex items-center justify-between px-10 pt-8 pb-10">
+        <div className="mb-36 lg:mb-[169px] bg-gray_1000 w-[300px] lg:w-[930px] rounded-2xl">
+          <section className="lg:flex items-center justify-between px-10 pt-8 pb-10">
             <div>
               <p className="font-bold text-[25.89px]">
                 <span className="text-primary">12</span> Open Roles
@@ -101,23 +101,25 @@ const JoinOurTeam = () => {
             </p>
           </section>
 
-          <ScrollingGallery images={careerImages} />
+          <div className="hidden md:block">
+            <ScrollingGallery images={careerImages} />
+          </div>
         </div>
       </section>
 
       {/* Second Section */}
-      <section className="flex mt-36 bg-white">
-        <div className="w-1/2 flex flex-col mr-24">
-          <div className="ml-24">
+      <section className="flex flex-col lg:flex-row mt-12 lg:mt-36 bg-white">
+        <div className="w-full lg:w-1/2 flex flex-col mr-24">
+          <div className="ml-0 lg:ml-24">
             <RoundedButton text="Our Work Culture" className="w-fit" />
             <JoinOurTeamSectionHeader
               text=" Driven by Purpose, Powered by Passion"
-              className="w-[432px]"
+              className="w-[350px] lg:w-[432px] py-4 lg:py-0"
             />
           </div>
           <ScrollingGallery images={images} />
         </div>
-        <div className="w-1/2 mt-16">
+        <div className="px-8 lg:px-0 w-full lg:w-1/2 mt-8 lg:mt-16">
           <JoinOurTeamHeader text="Obsess Over Solutions" />
           <JoinOurTeamSubText text="At Biyar, solving real problems is at the core of who we are. We put our customers first, knowing their success is our success. This customer-first mindset drives every decision we make and every solution we create." />
           <JoinOurTeamSubText
@@ -165,20 +167,20 @@ const JoinOurTeam = () => {
       </section>
 
       {/* Third Section */}
-      <div className="flex pt-36">
-        <div className="w-1/2 flex flex-col mr-24">
-          <div className="ml-24">
+      <div className="flex flex-col lg:flex-row pt-12 lg:pt-36">
+        <div className="w-full lg:w-1/2 flex flex-col mr-24">
+          <div className="ml-0 lg:ml-24">
             <RoundedButton text="Perks and Benefits" className="w-fit" />
 
             <JoinOurTeamSectionHeader
               text="Why you’ll love working here"
-              className="w-[432px]"
+              className="w-[350px] lg:w-[432px] py-4 lg:py-0"
             />
             <ScrollingGallery images={loveToWorkImages} />
           </div>
         </div>
 
-        <div className="w-1/2 flex flex-wrap">
+        <div className="w-1/2 flex flex-wrap mt-12 lg:mt-0 px-8">
           <div className="">
             <JoinOurTeamHeader text="Work From Anywhere" img={workFromHome} />
             <JoinOurTeamSubText
@@ -231,13 +233,13 @@ We trust you to make decisions."
       </div>
 
       {/* Fourth Section */}
-      <section className="mt-36 mb-24">
+      <section className="mt-12 lg:mt-36 mb-12 lg:mb-24">
         <div className="w-1/2 flex flex-col mb-12">
-          <div className="ml-24">
+          <div className="ml-0 lg:ml-24">
             <RoundedButton text="LIFE AT BIYAR" className="w-fit" />
             <JoinOurTeamSectionHeader
               text="  What it’s like working at Biyar"
-              className="w-[432px]"
+              className="w-[350px] lg:w-[432px] py-4 lg:py-0"
             />
           </div>
         </div>
@@ -245,10 +247,10 @@ We trust you to make decisions."
       </section>
 
       {/* Fifth Section */}
-      <div className="bg-gray_900 pt-36">
-        <section className=" flex flex-col  mx-auto w-[1116px]">
+      <div className="bg-gray_900 pt-12 lg:pt-36">
+        <section className=" flex flex-col  mx-auto lg:w-[1116px] px-8">
           <RoundedButton text="Job Openings" className="w-fit" />
-          <div className="flex items-center justify-between mt-5 mb-12">
+          <div className="flex flex-col lg:flex-row items-center justify-between mt-5 mb-12">
             <JoinOurTeamSectionHeader text="Career Openings at Biyar" />
 
             <p>All Openings</p>

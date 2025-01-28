@@ -12,14 +12,17 @@ const SingleJob = () => {
         <div className="flex flex-col items-center">
           <RoundedButton text="Open Careers" className="mb-8" />
 
-          <JoinOurTeamSectionHeader text="Senior Product Designer" />
+          <JoinOurTeamSectionHeader
+            text="Senior Product Designer"
+            className="text-center"
+          />
           <p className="font-normal text-base text-gray_700 pt-3">
             Remote (Lagos, Nigeria)
           </p>
         </div>
 
-        <section className="mt-[30px] w-[1116px] mx-auto pb-32 flex items-center">
-          <section className="mr-6 ">
+        <section className="mt-[30px] lg:w-[1116px] mx-auto pb-16 lg:pb-32 flex flex-col lg:flex-row items-center">
+          <section className="mr-0 lg:mr-6 ">
             <div className="bg-white p-5 mb-3 rounded-lg">
               <div className="flex items-center mb-3">
                 <Rounded />
@@ -28,7 +31,7 @@ const SingleJob = () => {
                 </p>
               </div>
 
-              <p className="font-medium manrope text-base leading-6 text-gray_700 w-[620px]">
+              <p className="font-medium manrope text-base leading-6 text-gray_700 w-[300px] lg:w-[620px]">
                 Driven by Purpose, Powered by Passion, At Biyar Tech, we craft
                 innovative software solutions that bring ideas to life.
                 Specializing in product design, user experience, and
@@ -72,7 +75,7 @@ const SingleJob = () => {
             </div>
           </section>
 
-          <section className="bg-white flex flex-col p-5 w-[432px]">
+          <section className="bg-white mt-8 lg:mt-0 flex flex-col p-5 w-fit lg:w-[432px]">
             <p className="manrope font-semibold text-base pb-5">
               Application Form
             </p>
