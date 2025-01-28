@@ -7,10 +7,10 @@ import { Link } from "react-router";
 const SingleBlog = () => {
   return (
     <Layout>
-      <section className="bg-gray_200 px-40 pt-36">
+      <section className="bg-gray_200 px-8 lg:px-40 pt-12 lg:pt-36">
         <Link
           to="/blog"
-          className={`w-fit  flex items-center rounded-[50px] px-4 py-2 border border-gray_300 bg-white mb-7`}
+          className={`w-fit flex items-center rounded-[50px] px-4 py-2 border border-gray_300 bg-white mb-7`}
         >
           <img src={backArrow} alt="backArrow" />
           <p className="font-normal text-lg mr-[10px] text-gray_300 ">
@@ -18,10 +18,10 @@ const SingleBlog = () => {
           </p>
         </Link>
 
-        <div className="flex justify-between pb-8">
-          <section>
+        <div className="flex flex-col lg:flex-row justify-between pb-8">
+          <section className="order-2 lg:order-1">
             <JoinOurTeamSectionHeader text="Why we built Cureclick for africans" />
-            <p className="manrope font-medium text-base leading-6 w-[620px] pt-[10px]">
+            <p className="manrope font-medium text-base leading-6 w-[350px] lg:w-[620px] pt-[10px]">
               We are building something bigger than ourselves for the world,
               this is where we talk about why’s, how’s and talk about our
               discoveries
@@ -31,7 +31,7 @@ const SingleBlog = () => {
               <img src={blogImage} />
             </div>
 
-            <p className="manrope font-medium text-base leading-[26px] w-[734px] pt-[10px] justify-start">
+            <p className="manrope font-medium text-base leading-[26px] w-[300px] lg:w-[734px] pt-[10px] justify-start">
               We are building something bigger than ourselves for the world,
               this is where we talk about why’s, how’s and talk about our
               discoveries We are building something bigger than ourselves for
@@ -56,7 +56,7 @@ const SingleBlog = () => {
             </p>
           </section>
 
-          <section>
+          <section className="order-1 lg:order-2">
             <div className="bg-white py-5 px-8 rounded-md mb-4">
               <div className="flex items-center mb-3">
                 <div className="bg-purple_100 h-[30px] w-[30px] rounded-full"></div>

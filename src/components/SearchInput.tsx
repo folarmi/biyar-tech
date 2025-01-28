@@ -18,7 +18,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white w-[656px] flex items-center gap-2 p-2 border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent transition-shadow ${className}`}
+      className={`bg-white w-fit lg:w-[656px] flex items-center gap-2 p-2 border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent transition-shadow ${className}`}
     >
       <button
         type="button"
