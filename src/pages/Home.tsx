@@ -13,7 +13,7 @@ const Home = () => {
 
       <SecondSection />
       <ThirdSection />
-      <FourthSection ifImage />
+      <FourthSection />
       <FifthSection />
       {/* <Sidebar /> */}
     </Layout>

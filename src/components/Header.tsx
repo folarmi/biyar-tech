@@ -5,6 +5,7 @@ import { Link } from "react-router";
 
 const Header = ({ toggleSidebar }: any) => {
   return (
+    //
     <nav className="sticky top-0 z-50 flex pt-10 justify-between items-center bg-gray_200 px-12">
       <Link to="/">
         <img src={logo} alt="biyar tech" />

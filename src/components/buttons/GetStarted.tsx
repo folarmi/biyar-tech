@@ -1,12 +1,18 @@
-import purpleArrow from "../../assets/icons/purple_arrow_circle_right.svg";
-
 const GetStarted = () => {
   return (
-    <div className="flex items-center rounded-[50px] px-6 py-4 border border-biyar_purple bg-white mr-[30px]">
-      <p className="font-normal text-lg mr-[10px] text-biyar_purple">
-        Get Started
-      </p>
-      <img src={purpleArrow} alt="purpleArrow" />
+    <div className="flex items-center rounded-[50px] px-6 py-4 border border-biyar_purple bg-white mr-[30px] cursor-pointer text-biyar_purple hover:bg-biyar_purple hover:text-white">
+      <p className="font-normal text-lg mr-[10px]">Get Started</p>
+
+      <svg
+        className="fill-current"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12ZM12 13H8V11H12V8L16 12L12 16V13Z" />
+      </svg>
     </div>
   );
 };
