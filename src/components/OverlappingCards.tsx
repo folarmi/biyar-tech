@@ -4,7 +4,7 @@ import customThree from "../assets/images/customThree.svg";
 
 const OverlappingCards = () => {
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="relative hidden lg:flex justify-center items-center">
       {/* Left Card */}
       <img
         src={customOne}

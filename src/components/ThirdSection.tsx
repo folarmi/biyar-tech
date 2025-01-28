@@ -8,12 +8,12 @@ const ThirdSection = () => {
   const [activeTab, setActiveTab] = useState("Cure Click");
   return (
     <div className="bg-gray_200 pb-32">
-      <section className="pt-28 pb-16 w-[571px] mx-auto">
+      <section className="pt-14 lg:pt-28 pb-8 lg:pb-16 lg:w-[571px] mx-auto">
         <BoldText text="Selected Product Showcase" className="text-center" />
       </section>
 
-      <div className="flex mx-auto w-[1116px]">
-        <section className="bg-white rounded-[30px] mr-6 p-8">
+      <div className="lg:flex mx-auto lg:w-[1116px]">
+        <section className="bg-white rounded-[30px] mb-4 lg:mb-0 mx-4 lg:mx-0 lg:mr-6 p-8">
           <SubText
             text=" A visual presentation of our selected products we have worked on"
             className="w-[258px] pb-8"

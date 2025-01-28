@@ -1,6 +1,6 @@
 const GetStarted = () => {
   return (
-    <div className="flex items-center rounded-[50px] px-6 py-4 border border-biyar_purple bg-white mr-[30px] cursor-pointer text-biyar_purple hover:bg-biyar_purple hover:text-white">
+    <div className="w-fit flex items-center rounded-[50px] px-6 py-4 border border-biyar_purple bg-white mr-[30px] cursor-pointer text-biyar_purple hover:bg-biyar_purple hover:text-white">
       <p className="font-normal text-lg mr-[10px]">Get Started</p>
 
       <svg

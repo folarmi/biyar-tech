@@ -5,11 +5,11 @@ import logoWhite from "../assets/images/logoWhite.svg";
 
 const Footer = () => {
   return (
-    <div className="pt-28">
-      <div className="flex justify-around items-center pb-20">
-        <img src={logo} alt="biyar tech" />
+    <div className="pt-8 lg:pt-28">
+      <div className="px-8 lg:px-0 flex flex-col lg:flex-row justify-around lg:items-center pb-20">
+        <img src={logo} alt="biyar tech" className="w-fit" />
 
-        <section className="flex items-center ">
+        <section className="flex items-center flex-wrap justify-between mt-4 lg:mt-0">
           <div className="mr-6">
             <Footerheader text="Company" />
             {company.map(({ id, name }) => {
@@ -32,7 +32,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="mr-6">
+          <div className="mr-6 mt-8 lg:mt-0">
             <Footerheader text="Services" />
             {services.map(({ id, name }) => {
               return (
@@ -43,7 +43,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div>
+          <div className="mt-8 lg:mt-0">
             <Footerheader text="Contact" />
             {contact.map(({ id, name }) => {
               return (
@@ -56,15 +56,15 @@ const Footer = () => {
         </section>
       </div>
 
-      <div className="mx-auto w-[1116px]">
-        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-8 text-justify">
+      <div className="mx-auto lg:w-[1116px]">
+        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-8 text-justify px-8 lg:px-0">
           Biyar offers its products and services in partnership with licensed
           transmitters in their respective jurisdictions. All trademarks and
           brand names belong to their respective owners. Use of these trademarks
           and brand names do not represent endorsement by or association with
           Biyar Technologies.
         </p>
-        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-8 text-justify">
+        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-8 text-justify px-8 lg:px-0">
           IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW ACCOUNT: To
           help the government fight the funding of terrorism and money
           laundering activities, federal law requires all financial institutions
@@ -75,7 +75,7 @@ const Footer = () => {
           a copy of your driver’s license.
         </p>
 
-        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-20 text-justify">
+        <p className="manrope font-normal text-sm leading-6 text-gray_800 pb-20 text-justify px-8 lg:px-0">
           The content on this website does not constitute a complete description
           of Blomgram’s offerings and services. By using this website, you
           accept our Terms of Use and Privacy Policy. Google Play and the Google

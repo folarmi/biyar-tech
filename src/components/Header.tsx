@@ -5,14 +5,13 @@ import { Link } from "react-router";
 
 const Header = ({ toggleSidebar }: any) => {
   return (
-    //
-    <nav className="sticky top-0 z-50 flex pt-10 justify-between items-center bg-gray_200 px-12">
+    <nav className="sticky top-0 z-50 flex justify-between items-center px-4 lg:px-12 py-4 bg-gray_200">
       <Link to="/">
         <img src={logo} alt="biyar tech" />
       </Link>
 
       <section className="flex items-center">
-        <button className="bg-primary rounded-lg px-6 py-3 font-medium text-base text-white mr-4">
+        <button className="hidden lg:block bg-primary rounded-lg px-6 py-3 font-medium text-base text-white mr-4">
           Lets Talk 👋
         </button>
         <div

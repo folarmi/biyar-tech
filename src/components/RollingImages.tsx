@@ -4,7 +4,7 @@ import biyarTech from "../assets/images/biyarTech.svg";
 const RollingImages = () => {
   return (
     <div className="flex justify-center">
-      <div className="relative w-[484px] h-[484px] flex items-center justify-center overflow-hidden">
+      <div className="relative w-[250px] lg:w-[484px] h-[250px] lg:h-[484px] flex items-center justify-center overflow-hidden">
         {/* Rotating Container */}
         <div className="absolute w-full h-full animate-rotate">
           <img

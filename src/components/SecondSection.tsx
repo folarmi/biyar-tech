@@ -9,7 +9,7 @@ const SecondSection = () => {
   // bg-gray_400
   return (
     <div className="">
-      <section className="pt-16 w-[571px] mx-auto">
+      <section className="pt-8 lg:pt-16 lg:w-[571px] mx-auto">
         <BoldText text="We Help Startups on a Budget Scale Fast and Smart." />
       </section>
 
