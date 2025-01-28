@@ -15,7 +15,7 @@ import { JoinOurTeamSectionHeader } from "../atoms/JoinOurTeamSectionHeader";
 import { JobCard } from "../components/cards/JobCard";
 import { ScrollingGallery } from "../components/ScrollingGallery";
 import galleryOne from "../assets/images/galleryOne.svg";
-import galleryTwo from "../assets/images/galleryTwo.svg";
+import galleryTwo from "../assets/images/galleryTwo.png";
 import galleryThree from "../assets/images/galleryThree.svg";
 import galleryFour from "../assets/images/galleryFour.svg";
 import galleryFive from "../assets/images/galleryFive.svg";

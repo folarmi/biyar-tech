@@ -2,16 +2,26 @@ import { SubText } from "../atoms/SubText";
 import purpleArrow from "../assets/icons/purple_arrow_circle_right.svg";
 import checkBox from "../assets/icons/check_box.svg";
 // import biyarTech from "../assets/images/biyarTech.svg";
-// import grid from "../assets/images/grid.svg";
+// import grid from "../assets/images/bgGrid.svg";
 import { servicesOne, servicesTwo } from "../data";
 import { RollingImages } from "./RollingImages";
 
 const FifthSection = () => {
   return (
-    <div className="bg-[#321578] relative">
+    <div
+      className="bg-[#321578] relative bg-custom-pattern bg-cover bg-center"
+      // style={{
+      //   backgroundImage: `url('../assets/images/bgGrid.svg')`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      //   backgroundRepeat: "no-repeat",
+      // }}
+    >
       <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <RollingImages />
       </div>
+
+      {/* <img src={grid} /> */}
 
       <div className="pt-96 pb-96 flex items-center justify-center">
         <section className="">

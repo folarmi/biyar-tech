@@ -40,6 +40,10 @@ export default {
           "100%": { transform: "rotate(360deg)" },
         },
       },
+
+      backgroundImage: {
+        "custom-pattern": "url('./assets/images/bgGrid.svg')",
+      },
     },
   },
   plugins: [],
