@@ -3,7 +3,6 @@ import { RoundedButton } from "../components/buttons/RoundedButton";
 import { Layout } from "../components/Layout";
 import whiteArrow from "../assets/icons/white_arrow_circle_right.svg";
 import aboutUs from "../assets/images/aboutUs.svg";
-import biyarTechTwo from "../assets/images/biyarTechTwo.svg";
 import { FifthSection } from "../components/FifthSection";
 import { FourthSection } from "../components/FourthSection";
 
@@ -28,7 +27,7 @@ const AboutUs = () => {
         </section>
 
         {/* Second Section */}
-        <section className="w-[1116px] mx-auto bg-white pt-52">
+        <section className="w-[1116px] mx-auto bg-white pt-52 mb-80">
           <div className=" flex items-center justify-center ">
             <div>
               <BoldText
@@ -66,13 +65,10 @@ const AboutUs = () => {
               <img src={aboutUs} />
             </div>
           </div>
-          <div className="flex items-center justify-center mt-11">
-            <img src={biyarTechTwo} />
-          </div>
         </section>
 
         <FifthSection />
-        <FourthSection ifImage={false} />
+        <FourthSection />
       </div>
     </Layout>
   );

@@ -1,24 +1,19 @@
 import { SubText } from "../atoms/SubText";
 import purpleArrow from "../assets/icons/purple_arrow_circle_right.svg";
 import checkBox from "../assets/icons/check_box.svg";
-import biyarTech from "../assets/images/biyarTech.svg";
+// import biyarTech from "../assets/images/biyarTech.svg";
 // import grid from "../assets/images/grid.svg";
 import { servicesOne, servicesTwo } from "../data";
+import { RollingImages } from "./RollingImages";
 
 const FifthSection = () => {
   return (
-    <div className="bg-purple_100">
-      {/* <img
-        src={grid}
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      /> */}
-
-      <div className="flex items-center justify-center">
-        <img src={biyarTech} />
+    <div className="bg-[#321578] relative">
+      <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <RollingImages />
       </div>
 
-      <div className="pt-52 pb-96 flex items-center justify-center">
+      <div className="pt-96 pb-96 flex items-center justify-center">
         <section className="">
           <p className="manrope font-bold text-[32px] text-white leading-10 w-[544px] pb-3">
             Everything you need to run your business, right out of the box.

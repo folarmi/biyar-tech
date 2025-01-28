@@ -21,9 +21,24 @@ export default {
         gray_1100: "#D9D9D9",
         gray_1200: "#020617",
         gray_1300: "#E2E8F0",
+        testimonial: "#EBF2FF",
         muted: "#64748B",
         muted: "#020617",
         purple_100: "#BBB3FF",
+      },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+        rotate: "rotate 6s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
     },
   },
