@@ -13,7 +13,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const navigate = useNavigate();
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
@@ -42,7 +42,7 @@ const Layout = ({ children }: LayoutProps) => {
 
         <div className="flex">
           <div className="w-[25%]">
-            <img src={background} alt="background" />
+            <img src={background} alt="background" className="h-full" />
           </div>
 
           <div className="w-[75%] ml-8 lg:ml-28 mt-16">
