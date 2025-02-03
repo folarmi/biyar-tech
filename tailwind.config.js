@@ -42,7 +42,7 @@ export default {
       },
 
       backgroundImage: {
-        "custom-pattern": "url('./assets/images/bgGrid.svg')",
+        "custom-pattern": "url('./assets/images/purpleBg.svg')",
       },
     },
   },

@@ -3,6 +3,7 @@ import { projects } from "../data";
 import sampleImage from "../assets/images/sampleImage.svg";
 import { BoldText } from "../atoms/BoldText";
 import { SubText } from "../atoms/SubText";
+import ashArrow from "../assets/images/ashArrow.svg";
 
 const ThirdSection = () => {
   const [activeTab, setActiveTab] = useState("Cure Click");
@@ -22,7 +23,7 @@ const ThirdSection = () => {
           {projects?.map(({ id, name }) => {
             return (
               <div
-                className="cursor-pointer"
+                className="cursor-pointer group relative"
                 key={id}
                 onClick={() => setActiveTab(name)}
               >
@@ -35,6 +36,12 @@ const ThirdSection = () => {
                 >
                   {name}
                 </p>
+
+                <img
+                  src={ashArrow}
+                  alt="hover content"
+                  className="absolute top-5 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             );
           })}

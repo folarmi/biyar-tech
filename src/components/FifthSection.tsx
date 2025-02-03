@@ -1,19 +1,15 @@
 import { SubText } from "../atoms/SubText";
 import purpleArrow from "../assets/icons/purple_arrow_circle_right.svg";
 import checkBox from "../assets/icons/check_box.svg";
-// import biyarTech from "../assets/images/biyarTech.svg";
-// import grid from "../assets/images/bgGrid.svg";
 import { servicesOne, servicesTwo } from "../data";
 import { RollingImages } from "./RollingImages";
 
 const FifthSection = () => {
   return (
-    <div className="bg-[#321578] relative bg-custom-pattern bg-cover bg-center">
+    <div className="relative bg-custom-pattern bg-cover bg-center">
       <div className="absolute top-1/6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <RollingImages />
       </div>
-
-      {/* <img src={grid} /> */}
 
       <div className="px-8 lg:px-0 pt-48 lg:pt-96 pb-24 lg:pb-96 flex flex-col lg:flex-row lg:items-center justify-center">
         <section className="">

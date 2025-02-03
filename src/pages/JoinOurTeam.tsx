@@ -16,7 +16,7 @@ import { JobCard } from "../components/cards/JobCard";
 import { ScrollingGallery } from "../components/ScrollingGallery";
 import galleryOne from "../assets/images/galleryOne.svg";
 import galleryTwo from "../assets/images/galleryTwo.png";
-import galleryThree from "../assets/images/galleryThree.svg";
+import galleryThree from "../assets/images/galleryThree.png";
 import galleryFour from "../assets/images/galleryFour.svg";
 import galleryFive from "../assets/images/galleryFive.svg";
 import careerOne from "../assets/images/careerOne.svg";
